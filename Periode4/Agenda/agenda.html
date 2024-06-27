@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda | Web-Essentials</title>
+    <title>Agenda - Web-Essentials</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
             <nav>
                 <ul>
                     <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="agenda.html" class="active">Agenda</a></li>
+                    <li><a href="../To-Do lijst/Todo.html">To-Do</a></li>
                     <li><a href="../Rekenmachine/rekenmachine.html">Rekenmachine</a></li>
-                    <li><a href="../Agenda/agenda.html">Agenda</a></li>
-                    <li><a href="../To-Do lijst/Todo.html">To-Do Lijst</a></li>
                 </ul>
             </nav>
         </div>
@@ -23,27 +23,30 @@
     <main>
         <div class="container">
             <h2>Agenda</h2>
-
-            <table id="appointmentsTable">
-                <thead>
-                    <tr>
-                        <th>Datum</th>
-                        <th>Tijd</th>
-                        <th>Omschrijving</th>
-                        <th>Acties</th>
-                    </tr>
-                </thead>
-                <tbody>
-                  
-                </tbody>
-            </table>
+            <div class="agenda-table">
+                <div class="agenda-header">
+                    <div class="section">Datum</div>
+                    <div class="section">Tijd</div>
+                    <div class="section">Omschrijving</div>
+                    <div class="section">Afspraak/Taak</div>
+                </div>
+                <!-- You can add rows dynamically with JavaScript or manually -->
+            </div>
+            <button class="add-button">Toevoegen</button>
         </div>
     </main>
+        <br><br><br><br><br><br><br>
     <footer>
+
         <div class="container">
             <p>&copy; 2024 Web-Essentials</p>
+            <div class="social-links">
+                <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="icons/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+            </div>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
