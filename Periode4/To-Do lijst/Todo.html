@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Lijst - Web-Essentials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <h1>Web-Essentials</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../Home/index.html">Home</a></li>
+                        <li><a href="../Agenda/agenda.html">Agenda</a></li>
+                        <li><a href="todo.html" class="active">To-Do</a></li>
+                        <li><a href="../Rekenmachine/rekenmachine.html">Rekenmachine</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h2>To-Do List</h2>
+                <div class="content">
+                    <div class="input-section">
+                        <label for="task-input">Taak:</label>
+                        <input type="text" id="task-input" placeholder="Placeholder">
+                        <button onclick="addTask()">Toevoegen</button>
+                    </div>
+                    <div class="task-section">
+                        <h3>Taken:</h3>
+                        <ul id="task-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Web-Essentials</p>
+            <div class="social-links">
+                <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="icons/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="footer-links">
+                <div class="topic">
+                    <h3>Topic</h3>
+                    <ul>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                    </ul>
+                </div>
+                <div class="topic">
+                    <h3>Topic</h3>
+                    <ul>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                    </ul>
+                </div>
+                <div class="topic">
+                    <h3>Topic</h3>
+                    <ul>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="todo-script.js"></script>
+</body>
+</html>
