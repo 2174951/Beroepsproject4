@@ -139,24 +139,44 @@ main h2 {
     align-items: center;
 }
 
+#task-list li.done {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
 #task-list li button {
     padding: 5px 10px;
     font-size: 14px;
     border: none;
-    background-color: #e74c3c;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-left: 5px;
 }
 
-#task-list li button:hover {
+#task-list li button.done {
+    background-color: #4CAF50;
+}
+
+#task-list li button.edit {
+    background-color: #3498db;
+}
+
+#task-list li button.delete {
+    background-color: #e74c3c;
+}
+
+#task-list li button.done:hover {
+    background-color: #45a049;
+}
+
+#task-list li button.edit:hover {
+    background-color: #2980b9;
+}
+
+#task-list li button.delete:hover {
     background-color: #c0392b;
-}
-
-#task-list li.done {
-    text-decoration: line-through;
-    color: #aaa;
 }
 
 /* Footer styling */

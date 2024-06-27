@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rekenmachine - Web-Essentials</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
-            <div class="container">
-                <h1>Web-Essentials</h1>
-                <nav>
+            <nav>
+                <div class="container1">
+                    <h1>Web-Essentials</h1>
+
                     <ul>
                         <li><a href="../Home/index.html">Home</a></li>
                         <li><a href="../Agenda/agenda.html">Agenda</a></li>
                         <li><a href="../To-Do lijst/Todo.html">To-Do</a></li>
                         <li><a href="rekenmachine.html" class="active">Rekenmachine</a></li>
                     </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="container">
-                <h2>Rekenmachine</h2>
-                <div class="content">
-                    <div class="section agenda">
-                        <img src="path/to/agenda-image.jpg" alt="Agenda">
-                        <p>Description</p>
-                    </div>
-                    <div class="section calculator">
-                        <div class="calculator-container">
-                            <input type="text" id="display" disabled>
-                            <div class="buttons">
-                                <button onclick="clearDisplay()">C</button>
-                                <button onclick="deleteLast()">DEL</button>
-                                <button onclick="appendToDisplay('(')">(</button>
-                                <button onclick="appendToDisplay(')')">)</button>
-                                <button onclick="appendToDisplay('7')">7</button>
-                                <button onclick="appendToDisplay('8')">8</button>
-                                <button onclick="appendToDisplay('9')">9</button>
-                                <button onclick="appendToDisplay('/')">:</button>
-                                <button onclick="appendToDisplay('4')">4</button>
-                                <button onclick="appendToDisplay('5')">5</button>
-                                <button onclick="appendToDisplay('6')">6</button>
-                                <button onclick="appendToDisplay('*')">x</button>
-                                <button onclick="appendToDisplay('1')">1</button>
-                                <button onclick="appendToDisplay('2')">2</button>
-                                <button onclick="appendToDisplay('3')">3</button>
-                                <button onclick="appendToDisplay('-')">-</button>
-                                <button onclick="appendToDisplay('0')">0</button>
-                                <button onclick="appendToDisplay('.')">.</button>
-                                <button onclick="calculateResult()">=</button>
-                                <button onclick="appendToDisplay('+')">+</button>
-                            </div>
+            </nav>
+    </div>
+    </header>
+    <main>
+        <div class="container2">
+            <h2>Rekenmachine</h2>
+            <div class="content">
+                <div class="section agenda">
+                    <img src="agenda.png" alt="Agenda">
+                    <a href="../Agenda/agenda.html">
+                        <p>Klik hier voor agenda</p>
+                    </a>
+                </div>
+                <div class="section calculator">
+                    <div class="calculator-container">
+                        <input type="text" id="display" disabled>
+                        <div class="buttons">
+                            <button onclick="clearDisplay()">C</button>
+                            <button onclick="deleteLast()">DEL</button>
+                            <button onclick="appendToDisplay('(')">(</button>
+                            <button onclick="appendToDisplay(')')">)</button>
+                            <button onclick="appendToDisplay('7')">7</button>
+                            <button onclick="appendToDisplay('8')">8</button>
+                            <button onclick="appendToDisplay('9')">9</button>
+                            <button onclick="appendToDisplay('/')">:</button>
+                            <button onclick="appendToDisplay('4')">4</button>
+                            <button onclick="appendToDisplay('5')">5</button>
+                            <button onclick="appendToDisplay('6')">6</button>
+                            <button onclick="appendToDisplay('*')">x</button>
+                            <button onclick="appendToDisplay('1')">1</button>
+                            <button onclick="appendToDisplay('2')">2</button>
+                            <button onclick="appendToDisplay('3')">3</button>
+                            <button onclick="appendToDisplay('-')">-</button>
+                            <button onclick="appendToDisplay('0')">0</button>
+                            <button onclick="appendToDisplay('.')">.</button>
+                            <button onclick="calculateResult()">=</button>
+                            <button onclick="appendToDisplay('+')">+</button>
                         </div>
                     </div>
-                    <div class="section todo">
-                        <img src="path/to/todo-image.jpg" alt="To-Do">
-                        <p>Description</p>
-                    </div>
+                </div>
+                <div class="section todo">
+                    <img src="todo.jpg" alt="To-Do">
+                    <a href="../To-Do lijst/Todo.html">
+                        <p>Klik hier voor to-do lijst</p>
+                    </a>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
     </div>
     <footer>
         <div class="container">
@@ -103,4 +110,5 @@
     </footer>
     <script src="rekenmachine-script.js"></script>
 </body>
+
 </html>

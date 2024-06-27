@@ -20,11 +20,13 @@ body {
     flex: 1;
 }
 
-.container {
+.container1, .container2 {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
+
 }
+
 
 /* Header styling */
 header {
@@ -41,6 +43,8 @@ header h1 {
 nav ul {
     display: inline-block;
     float: right;
+    padding-top: ;
+
 }
 
 nav ul li {
@@ -109,7 +113,7 @@ main h2 {
 }
 
 #display {
-    width: 100%;
+    width: 80%;
     padding: 20px;
     margin-bottom: 10px;
     text-align: right;
