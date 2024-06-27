@@ -10,36 +10,37 @@
 
 <body>
 
-        <header>
+    <header>
+        <nav>
             <div class="container">
                 <h1>Web-Essentials</h1>
-                <nav>
-                    <ul>
-                        <li><a href="../Home/index.html">Home</a></li>
-                        <li><a href="../Agenda/agenda.html">Agenda</a></li>
-                        <li><a href="todo.html" class="active">To-Do</a></li>
-                        <li><a href="../Rekenmachine/rekenmachine.html">Rekenmachine</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="container">
-                <h2>To-Do List</h2>
-                <div class="content">
-                    <div class="input-section">
-                        <label for="task-input">Taak:</label>
-                        <input type="text" id="task-input" placeholder="Voer je taak in">
-                        <button onclick="addTask()">Toevoegen</button>
-                    </div>
-                    <div class="task-section">
-                        <h3>Taken:</h3>
-                        <ul id="task-list"></ul>
-                    </div>
+
+                <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../Agenda/agenda.html">Agenda</a></li>
+                    <li><a href="todo.html" class="active">To-Do</a></li>
+                    <li><a href="../Rekenmachine/rekenmachine.html">Rekenmachine</a></li>
+                </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>To-Do List</h2>
+            <div class="content">
+                <div class="input-section">
+                    <label for="task-input">Taak:</label>
+                    <input type="text" id="task-input" placeholder="Voer je taak in">
+                    <button onclick="addTask()">Toevoegen</button>
+                </div>
+                <div class="task-section">
+                    <h3>Taken:</h3>
+                    <ul id="task-list"></ul>
                 </div>
             </div>
-        </main>
-  
+        </div>
+    </main>
+
 
     <footer>
         <div class="container">

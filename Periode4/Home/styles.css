@@ -6,13 +6,15 @@ body, h1, h2, h3, p, ul {
     padding: 0;
     list-style: none;
     font-family: Arial, sans-serif;
+
 }
 
 /* Basic styling */
 body {
-    background-color: #f4f4f4;
+    background-color: #e0e0e0; /* Match background color of To-Do */
     color: #333;
     line-height: 1.6;
+    margin-bottom: 0px;
 }
 
 .container {
@@ -24,13 +26,13 @@ body {
 /* Header styling */
 header {
     background-color: white;
-    color: #fff;
+    border-bottom: 1px solid #ddd; /* Border bottom to match To-Do */
     padding: 20px 0;
 }
 
 header h1 {
     text-align: center;
-    margin-bottom: 10px;
+    color: #333;
 }
 
 nav ul {
@@ -39,19 +41,25 @@ nav ul {
     gap: 15px;
 }
 
-nav a {
-    color: #fff;
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333; /* Text color to match To-Do */
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
+nav ul li a:hover {
     text-decoration: underline;
 }
 
 /* Main content styling */
 main {
     padding: 20px 0;
+    background-color: #e0e0e0; /* Match background color of To-Do */
 }
 
 .intro {
@@ -78,7 +86,7 @@ main {
 
 .tool h3 {
     margin-bottom: 10px;
-    color: rgb(102, 34, 102);
+    color: #663366; /* Color to match To-Do */
 }
 
 .tool p {
