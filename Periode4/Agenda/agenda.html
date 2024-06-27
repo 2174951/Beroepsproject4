@@ -13,7 +13,7 @@
             <nav>
                 <ul>
                     <li><a href="../Home/index.html">Home</a></li>
-                    <li><a href="agenda.html" class="active">Agenda</a></li>
+                    <li><a href="../Agenda/agenda2.html" class="active">Agenda</a></li>
                     <li><a href="../To-Do lijst/Todo.html">To-Do</a></li>
                     <li><a href="../Rekenmachine/rekenmachine.html">Rekenmachine</a></li>
                 </ul>
@@ -30,23 +30,60 @@
                     <div class="section">Omschrijving</div>
                     <div class="section">Afspraak/Taak</div>
                 </div>
-                <!-- You can add rows dynamically with JavaScript or manually -->
+                <div id="agendaContent"></div>
             </div>
-            <button class="add-button"> <a href="../Agenda/agenda2.html">Toevoegen</a></button>
+            <div class="button-container">
+                <button class="add-button"><a href="agenda2.html">Toevoegen</a></button>
+                <button class="delete-button" onclick="clearAgenda()">Verwijderen</button>
+            </div>
         </div>
     </main>
-        <br><br><br><br><br><br><br>
     <footer>
-
         <div class="container">
             <p>&copy; 2024 Web-Essentials</p>
-            <div class="social-links">
-                <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-                <a href="#"><img src="icons/youtube.png" alt="YouTube"></a>
-                <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
-            </div>
         </div>
     </footer>
+    <script>
+        function loadAgenda() {
+            const agendaContent = document.getElementById('agendaContent');
+            let agenda = localStorage.getItem('agenda');
+            if (agenda) {
+                agenda = JSON.parse(agenda);
+                agenda.forEach(item => {
+                    const row = document.createElement('div');
+                    row.classList.add('agenda-row');
+                    
+                    const date = document.createElement('div');
+                    date.classList.add('section');
+                    date.textContent = item.date;
+                    row.appendChild(date);
+
+                    const time = document.createElement('div');
+                    time.classList.add('section');
+                    time.textContent = item.time;
+                    row.appendChild(time);
+
+                    const description = document.createElement('div');
+                    description.classList.add('section');
+                    description.textContent = item.description;
+                    row.appendChild(description);
+
+                    const task = document.createElement('div');
+                    task.classList.add('section');
+                    task.textContent = item.task;
+                    row.appendChild(task);
+
+                    agendaContent.appendChild(row);
+                });
+            }
+        }
+
+        function clearAgenda() {
+            localStorage.removeItem('agenda');
+            document.getElementById('agendaContent').innerHTML = '';
+        }
+
+        document.addEventListener('DOMContentLoaded', loadAgenda);
+    </script>
 </body>
 </html>
